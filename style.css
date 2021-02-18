@@ -1,0 +1,81 @@
+
+
+#logo{
+    width: 90px;
+    height: 50px;
+}
+
+#entête{
+    position: relative;
+    margin-top: 20px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+#menu{
+    display: flex;
+    position: absolute;
+    right: 80px;
+    top: 10px;   
+    font-size: 20px;
+}
+
+#inscription{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 20px;
+    order: 3;
+    font-weight: bold;
+    color: #0065FC;
+}
+
+#hebergement, #activites{
+    margin-right: 70px;
+    color: gray;
+}
+
+a{
+    text-decoration: none;
+}
+
+#hebergement:hover, #activites:hover, #inscription:hover{
+    
+    border-top: #0065FC 5px solid;
+    padding-top: 28px;
+    margin-top: -31px;
+}
+/*
+@media screen and (max-device-width: 500px)
+{
+    *{
+        margin: 0%;
+        padding: 0%;
+
+    }
+
+    #entête{
+        position: relative;
+         width: 100%;
+    }
+    #menu{
+        width: 100%;
+        position: absolute;
+        left: 10px;
+        top: 100px;
+    }
+
+    #inscription{
+        position: absolute;
+        top: 15px;
+        color: #0065FC;
+
+    }
+
+    #hebergement:hover, #activites:hover{
+        border-bottom: #0065FC 5px solid;
+        border-top: none;
+
+    }
+}
+*/
