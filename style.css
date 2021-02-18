@@ -9,8 +9,8 @@
     padding: 0;
     margin: 0;
 }
-body{
-    background-color: #F2F2F2;
+ul{
+    list-style: none;
 }
 /*Entête*/
 #logo{
@@ -30,7 +30,6 @@ body{
     right: 90px;
     margin-top: 12px;
     font-size: 20px;
-    list-style: none;
 }
 #inscription{
     font-family: 'Raleway';
@@ -47,11 +46,28 @@ body{
 }
 a{
     text-decoration: none;
+    color: black;
 }
 #hebergement:hover, #activites:hover, #inscription:hover{    
     border-top: #0065FC 5px solid;
     padding-top: 28px;
     margin-top: -31px;
+}
+/*Pied*/
+#pied{
+    font-family: 'Raleway';
+    display: flex;
+    width: 100%; 
+    margin: auto;
+    padding: 30px;   
+    background-color: #F2F2F2;
+}
+#propos, #nos_hebergement{
+    padding-right: 500px;
+}
+footer li a:hover{
+    text-decoration: underline;
+    color: #0065FC;
 }
 /*Format Mobile*/
 @media all and (max-device-width: 480px)
@@ -91,4 +107,7 @@ a{
        padding-right: 30px;
        padding-left: 40px;
    }
+   #activites:hover, #hebergement:hover{    
+       border: #0065FC solid 5px;
+    }
 }   
