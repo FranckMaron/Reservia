@@ -1,81 +1,94 @@
-
-
+/*Téléchargement de la police*/
+@font-face{
+    font-family: 'Raleway';
+    src: url(Polices/Raleway-Regular.svg) format('svg');
+    src: url(Polices/Raleway-Regular.ttf) format('truetype');
+}
+/*Général*/
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #F2F2F2;
+}
+/*Entête*/
 #logo{
-    width: 90px;
+    width: 100px;
     height: 50px;
 }
-
-#entête{
+#entête{  
     position: relative;
     margin-top: 20px;
     margin-left: 70px;
     margin-right: 70px;
 }
-
 #menu{
-    display: flex;
+    font-family: 'Raleway', sans-serif;  
+    display: inline-flex;
     position: absolute;
-    right: 80px;
-    top: 10px;   
+    right: 90px;
+    margin-top: 12px;
     font-size: 20px;
+    list-style: none;
 }
-
 #inscription{
+    font-family: 'Raleway';
     position: absolute;
     right: 10px;
     top: 10px;
     font-size: 20px;
-    order: 3;
-    font-weight: bold;
     color: #0065FC;
+    font-weight: bold;
 }
-
 #hebergement, #activites{
     margin-right: 70px;
-    color: gray;
+    color:gray;
 }
-
 a{
     text-decoration: none;
 }
-
-#hebergement:hover, #activites:hover, #inscription:hover{
-    
+#hebergement:hover, #activites:hover, #inscription:hover{    
     border-top: #0065FC 5px solid;
     padding-top: 28px;
     margin-top: -31px;
 }
-/*
-@media screen and (max-device-width: 500px)
+/*Format Mobile*/
+@media all and (max-device-width: 480px)
 {
     *{
-        margin: 0%;
-        padding: 0%;
-
+        padding: 0;
+        margin: 0;
     }
-
-    #entête{
-        position: relative;
-         width: 100%;
-    }
-    #menu{
-        width: 100%;
-        position: absolute;
-        left: 10px;
-        top: 100px;
-    }
-
-    #inscription{
-        position: absolute;
-        top: 15px;
-        color: #0065FC;
-
-    }
-
-    #hebergement:hover, #activites:hover{
-        border-bottom: #0065FC 5px solid;
-        border-top: none;
-
-    }
-}
-*/
+   #entête{
+       width: 100%;
+       margin: auto;     
+       position: absolute;       
+   }
+   #logo{
+       margin: 20px;
+   }
+   #inscription{
+       position: absolute;
+       top: 35px;
+       left: 430px;
+       font-size: 1.5em;       
+   }
+   #menu{
+       width: 550px;
+       margin: auto;
+       position: relative;
+       left: 1px;
+       border-bottom: rgba(128, 128, 128, 0.1) 5px solid;
+   }
+   #activites, #hebergement{       
+       font-size: 1.5em;
+   }
+    #activites{
+       margin-right: 10px;
+   }
+   #hebergement{
+       padding-right: 30px;
+       padding-left: 40px;
+   }
+}   
