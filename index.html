@@ -1,52 +1,121 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c7c9029f97.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>Réservia</title>
 </head>
+
 <body>
     <!--Entête-->
     <header id="entête">
         <img id="logo" src="Images/Reservia.png" alt="Logo de réservia">
-        <ul id="menu">                     
-            <li><a id="hebergement" href="#Hébergements">Hébergements</a></li>
-            <li><a id="activites" href="#Activités">Activités</a><li>                
-        </ul>
-        <div >
-            <a id="inscription"href="#inscr">S'inscrire</a>
-        </div>
+        <nav id="menu">
+            <a id="hebergement" href="#Hébergements">Hébergements</a>
+            <a id="activites" href="#Activités">Activités</a>
+        </nav>
+        <a id="inscription" href="#">S'inscrire</a>
     </header>
-    <main>
 
+    <main>
+        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+        <p>En plein centre ville ou en pleine nature</p>
+        <span>
+            <i class="fas fa-map-marker-alt"></i>
+        </span>
+        <span>
+            <input type="search" placeholder="Marseille, France">
+        </span>
+        <span>
+            <input type="button" value="Rechercher">
+        </span>
+        <div>Filtres
+            <i class="fas fa-money-bill-wave"><a href="#economique">Economique</a></i>
+            <i class="fas fa-child"></i><a href=""">Familial</a>
+            <i class=" fas fa-heart"></i><a href="#">Romantique</a>
+            <i class="fas fa-dog"></i><a href="#">Animaux autorisés</a>
+        </div>
+        <p>
+            <span><i class="fas fa-info"></i></span> Plus de 500 logements sont disponibles dans cette ville
+        </p>
+        <div>
+            <article>
+                <h2>Hébergements à Marseille</h2>
+                <div>
+                    <span>hotel 1</span><span>hotel 2</span><span>hotel 3</span>
+                </div>
+                <div>
+                    <span>hotel 4</span><span>hotel 5</span><span>hotel 6</span><br>
+                    <p>Afficher plus</p>
+                </div>
+            </article>
+            <aside>
+                <h2>Les plus populaires <span>image courbe</span> </h2>
+                <div>
+                    Hotel 1
+                </div>
+                <div>
+                    hotel 2
+                </div>
+                <div>
+                    Hotel3
+                </div>                
+            </aside>
+        </div>
+        <section>
+            <h2>Activités à marseille</h2>
+            <div>
+                vieux port
+            </div>
+            <div>
+                <div>
+                    fort de pormègue
+                </div>
+                <div>
+                    iles du frioul
+                </div>
+            </div>
+            <div>
+                parc national des calangues
+            </div>
+            <div>
+                <div>
+                    notre dame de la garde
+                </div>
+                <div>
+                    parc lomgchamps
+                </div>
+            </div>
+        </section>
     </main>
     <footer id="pied">
         <div id="propos">
-            <h2>A propos</h2><br>
+            <h3>A propos</h3><br>
             <ul>
                 <li><a href="#site">Fonctionnement du site</a></li><br>
                 <li><a href="#vente">Générales de vente</a></li><br>
-                <li><a href="#confidentialite">Données et confidentialité</a></li>
+                <li><a href="#confidentialite">Données et confidentialité</a></li><br>
             </ul>
         </div>
         <div id="nos_hebergement">
-            <h2>Nos hébergements</h2><br>
+            <h3>Nos hébergements</h3><br>
             <ul>
                 <li><a href="#charte">Charte qualité</a></li><br>
                 <li><a href="#soumettre">Soumettre votre hotêl</a></li><br>
             </ul>
         </div>
         <div id="assistance">
-            <h2>Assistance</h2><br>
+            <h3>Assistance</h3><br>
             <ul>
                 <li><a href="#aide">Centre d'aide</a></li><br>
                 <li><a href="#contact">Nous contacter</a></li><br>
             </ul>
         </div>
-        
+
     </footer>
 </body>
+
 </html>

@@ -4,52 +4,51 @@
     src: url(Polices/Raleway-Regular.svg) format('svg');
     src: url(Polices/Raleway-Regular.ttf) format('truetype');
 }
+
 /*Général*/
 *{
     padding: 0;
     margin: 0;
 }
-ul{
-    list-style: none;
-}
-/*Entête*/
-#logo{
-    width: 100px;
-    height: 50px;
-}
-#entête{  
-    position: relative;
-    margin-top: 20px;
-    margin-left: 70px;
-    margin-right: 70px;
-}
-#menu{
-    font-family: 'Raleway', sans-serif;  
-    display: inline-flex;
-    position: absolute;
-    right: 90px;
-    margin-top: 12px;
-    font-size: 20px;
-}
-#inscription{
-    font-family: 'Raleway';
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    font-size: 20px;
-    color: #0065FC;
-    font-weight: bold;
-}
-#hebergement, #activites{
-    margin-right: 70px;
-    color:gray;
-}
 a{
     text-decoration: none;
     color: black;
 }
+ul{
+    list-style: none;
+}
+/*Entête*/
+#entête{
+    position: relative;    
+    margin-top: 20px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+#logo{
+    width: 100px;
+}
+#menu, #inscription{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    position: absolute;
+}
+#menu{  
+    display: flex;    
+    right: 70px;
+    top: 12px;
+}
+#inscription{
+    color: #0065FC;
+    font-weight: bold;
+    right: 0px;
+    top: 12px;    
+}
+#hebergement, #activites{
+    margin-right: 40px;
+}
 #hebergement:hover, #activites:hover, #inscription:hover{    
     border-top: #0065FC 5px solid;
+    color: #0065FC;
     padding-top: 28px;
     margin-top: -31px;
 }
@@ -58,56 +57,45 @@ a{
     font-family: 'Raleway';
     display: flex;
     width: 100%; 
-    margin: auto;
     padding: 30px;   
     background-color: #F2F2F2;
 }
 #propos, #nos_hebergement{
-    padding-right: 500px;
+    padding-right: 24%;
 }
 footer li a:hover{
     text-decoration: underline;
     color: #0065FC;
 }
 /*Format Mobile*/
-@media all and (max-device-width: 480px)
+@media all and (max-device-width: 640px)
 {
-    *{
-        padding: 0;
-        margin: 0;
-    }
-   #entête{
-       width: 100%;
-       margin: auto;     
-       position: absolute;       
-   }
-   #logo{
-       margin: 20px;
+    /*Entête mobile*/
+    #entête{
+        background-color: black; 
+        margin: 0px;
+        padding: 0px;
    }
    #inscription{
-       position: absolute;
-       top: 35px;
-       left: 430px;
-       font-size: 1.5em;       
+        margin-top: px;
+        margin-right: 0px;
    }
-   #menu{
-       width: 550px;
-       margin: auto;
-       position: relative;
-       left: 1px;
-       border-bottom: rgba(128, 128, 128, 0.1) 5px solid;
-   }
-   #activites, #hebergement{       
-       font-size: 1.5em;
-   }
-    #activites{
-       margin-right: 10px;
-   }
-   #hebergement{
-       padding-right: 30px;
-       padding-left: 40px;
-   }
-   #activites:hover, #hebergement:hover{    
-       border: #0065FC solid 5px;
+    #menu{
+        background-color: #0065FC;
+        top: 70px;
+        left: 0px;
+        font-size: 1.2em;
+        color: black;
+        border-bottom: gray 5px solid;
+        padding: 10px;
     }
-}   
+    #hebergement, #activites{
+        background-color: #0065FC;
+        
+    }
+    /*Footer mobile*/
+     #pied{
+        margin-top: 40px;
+        display: block;
+   }
+}  
