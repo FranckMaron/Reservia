@@ -10,6 +10,7 @@
     padding: 0;
     margin: 0;
 }
+
 a{
     text-decoration: none;
     color: black;
@@ -43,6 +44,7 @@ ul{
     right: 0px;
     top: 12px;    
 }
+/*
 #hebergement, #activites{
     margin-right: 40px;
 }
@@ -52,6 +54,7 @@ ul{
     padding-top: 28px;
     margin-top: -31px;
 }
+*/
 /*Pied*/
 #pied{
     font-family: 'Raleway';
