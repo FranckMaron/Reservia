@@ -11,6 +11,9 @@
     margin: 0;
 }
 
+img{
+    width: 50px;
+}
 a{
     text-decoration: none;
     color: black;
@@ -19,11 +22,9 @@ ul{
     list-style: none;
 }
 /*Entête*/
-#entête{
-    position: relative;    
-    margin-top: 20px;
-    margin-left: 70px;
-    margin-right: 70px;
+#entete{
+    display: flex;
+    background-color: red;  
 }
 #logo{
     width: 100px;
@@ -31,22 +32,11 @@ ul{
 #menu, #inscription{
     font-family: 'Raleway', sans-serif;
     font-size: 1em;
-    position: absolute;
 }
-#menu{  
-    display: flex;    
-    right: 70px;
-    top: 12px;
-}
+
 #inscription{
     color: #0065FC;
-    font-weight: bold;
-    right: 0px;
-    top: 12px;    
-}
-/*
-#hebergement, #activites{
-    margin-right: 40px;
+    font-weight: bold;   
 }
 #hebergement:hover, #activites:hover, #inscription:hover{    
     border-top: #0065FC 5px solid;
@@ -54,7 +44,6 @@ ul{
     padding-top: 28px;
     margin-top: -31px;
 }
-*/
 /*Pied*/
 #pied{
     font-family: 'Raleway';
