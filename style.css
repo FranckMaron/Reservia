@@ -7,10 +7,19 @@
 
 /*Général*/
 *{
-    padding: 0;
-    margin: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    font-weight: normal;
 }
-
+h1{
+    font-weight: bolder;
+    font-size: 1.4em;
+}
+h2{
+    margin-top: -10px;
+}
 img{
     width: 50px;
 }
@@ -24,25 +33,66 @@ ul{
 /*Entête*/
 #entete{
     display: flex;
-    background-color: red;  
+    margin-top: 40px;
 }
 #logo{
     width: 100px;
 }
-#menu, #inscription{
-    font-family: 'Raleway', sans-serif;
-    font-size: 1em;
+#menu{
+    margin-left: 70%;    
+    width: 300px;
 }
-
+#menu_activites{
+    margin-left: 60px;
+}
 #inscription{
     color: #0065FC;
     font-weight: bold;   
 }
-#hebergement:hover, #activites:hover, #inscription:hover{    
-    border-top: #0065FC 5px solid;
+#menu_hebergement:hover, #menu_activites:hover, #inscription:hover{  
+    border-top: #0065FC 4px solid;
     color: #0065FC;
-    padding-top: 28px;
-    margin-top: -31px;
+    margin-top: -39px;   
+    padding-top: 35px;
+}
+/*Partie Principale*/
+/*Barre de recherche*/
+#recherche{
+    border-top: rgb(128, 128, 128) 1px solid;
+    border-bottom: rgb(128, 128, 128) 1px solid;
+    border-left: rgb(128, 128, 128) 1px solid;
+    border-radius: 15px;
+    display: inline-flex;
+    width: 420px;
+    height: 40px;
+}
+#marquer{
+    border-right: rgba(0, 0, 0, 0.315) 0.5px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    width: 45px;
+    margin-left: 0;
+}
+#barre{
+    border: rgba(128, 128, 128, 0.048) 1px solid;
+    margin-left: -10px;
+    padding-left: 10px;
+    padding-right: 70px;
+}
+#bouton{
+    background-color: #0065FC;
+    color: white;
+    font-weight: bolder;
+    border: rgba(128, 128, 128, 0.048) 5px solid;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 6.5px;
+    padding-top: 7px;
+    margin-left: -110px;
+}
+#loupe{
+    display: none;
 }
 /*Pied*/
 #pied{
