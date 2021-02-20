@@ -111,35 +111,3 @@ footer li a:hover{
     text-decoration: underline;
     color: #0065FC;
 }
-/*Format Mobile*/
-@media all and (max-device-width: 640px)
-{
-    /*Entête mobile*/
-    #entête{
-        background-color: black; 
-        margin: 0px;
-        padding: 0px;
-   }
-   #inscription{
-        margin-top: px;
-        margin-right: 0px;
-   }
-    #menu{
-        background-color: #0065FC;
-        top: 70px;
-        left: 0px;
-        font-size: 1.2em;
-        color: black;
-        border-bottom: gray 5px solid;
-        padding: 10px;
-    }
-    #hebergement, #activites{
-        background-color: #0065FC;
-        
-    }
-    /*Footer mobile*/
-     #pied{
-        margin-top: 40px;
-        display: block;
-   }
-}  
