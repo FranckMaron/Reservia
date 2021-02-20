@@ -65,8 +65,9 @@ ul{
     display: inline-flex;
     width: 420px;
     height: 40px;
+    background-color: rgba(173, 173, 173, 0.438);
 }
-#marquer{
+#marquer{    
     border-right: rgba(0, 0, 0, 0.315) 0.5px solid;
     display: flex;
     justify-content: center;
@@ -87,7 +88,7 @@ ul{
     border: rgba(128, 128, 128, 0.048) 5px solid;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    padding: 6.5px;
+    padding: 6px;
     padding-top: 7px;
     margin-left: -110px;
 }
