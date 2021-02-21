@@ -11,6 +11,10 @@ body{
     margin-right: 250px;
     font-family: 'Raleway', sans-serif;
 }
+a{
+    text-decoration: none;
+    color: black;
+}
 h1{
     font-size: 1.7em;
 }
@@ -18,12 +22,16 @@ h2{
     font-weight: normal;
     margin-top: -10px;   
 }
+h3{
+    font-weight: bolder;
+    font-size: 1.5em;
+    margin-left: 10px;
+}
+h4{
+    font-size: 1.2em;
+}
 img{
     width: 50px;
-}
-a{
-    text-decoration: none;
-    color: black;
 }
 ul{
     list-style: none;
@@ -54,6 +62,7 @@ ul{
     margin-top: -39px;   
     padding-top: 35px;
 }
+
 /*Partie Principale*/
 /*Barre de recherche*/
 #recherche{
@@ -156,13 +165,6 @@ p span{
     font-size: 1.1em;
 }
 /*Hébergements*/
-.carte_hotel_pop, .carte_hotel_stand, .carte_activites{
-    display: inline-block;
-    background-color: white;
-    border-radius: 15px;
-    margin: 10px;
-    box-shadow: gray 1px 1px 10px;
-}
 #Hébergements{
     display: inline-flex;
     flex-direction: row-reverse;
@@ -196,8 +198,6 @@ p span{
     justify-content: space-between;
     width: 100%;
 }
-
-
 /*Populaires*/
 .carte_hotel_pop{
     height: 33%;
@@ -207,11 +207,42 @@ p span{
     flex-direction: column;
     width: 30%;   
 }
+/*Cartes*/
+.carte_hotel_pop, .carte_hotel_stand, .carte_activites, .demi_carte{
+    display: inline-block;
+    background-color: white;
+    border-radius: 15px;
+    margin: 10px;
+    box-shadow: gray 1px 1px 10px;
+}
+.carte_hotel_pop:hover, .carte_hotel_stand:hover, .carte_activites:hover, .demi_carte:hover{
+    background-color: #DEEBFF;
+}
+.carte_hotel_pop, .carte_hotel_stand{
+    padding: 10px;
+}
 /*Activités*/
+figure{
+    margin: 0;
+}
 .activites{
     display: inline-flex;
+    width: 100%;
+}
+.carte_activites, .conteneur_carte_activites{
+    width: 25%;
+}
+.conteneur_carte_activites{
+    display: flex;
+    flex-direction: column; 
+}
+figcaption{
+    font-weight: bolder;
 }
 /*Pied*/
+footer h3{
+    margin: 0;
+}
 #pied{
     display: flex;
     width: 100%; 
