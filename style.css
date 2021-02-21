@@ -6,19 +6,17 @@
 }
 
 /*Général*/
-*{
-    margin-left: 10px;
-    margin-right: 10px;
+body{
+    margin-left: 250px;
+    margin-right: 250px;
     font-family: 'Raleway', sans-serif;
-    font-size: 1em;
-    font-weight: normal;
 }
 h1{
-    font-weight: bolder;
-    font-size: 1.4em;
+    font-size: 1.7em;
 }
 h2{
-    margin-top: -10px;
+    font-weight: normal;
+    margin-top: -10px;   
 }
 img{
     width: 50px;
@@ -36,18 +34,19 @@ ul{
     margin-top: 40px;
 }
 #logo{
+    margin-top: -20px;
     width: 100px;
 }
 #menu{
-    margin-left: 70%;    
-    width: 300px;
+    display: inline-flex;
+    margin-left: 65%;
 }
-#menu_activites{
-    margin-left: 60px;
+#menu_hebergement, #menu_activites{
+    margin-right: 70px;
 }
 #inscription{
     color: #0065FC;
-    font-weight: bold;   
+    font-weight: bold;  
 }
 #menu_hebergement:hover, #menu_activites:hover, #inscription:hover{  
     border-top: #0065FC 4px solid;
@@ -58,47 +57,162 @@ ul{
 /*Partie Principale*/
 /*Barre de recherche*/
 #recherche{
-    border-top: rgb(128, 128, 128) 1px solid;
-    border-bottom: rgb(128, 128, 128) 1px solid;
-    border-left: rgb(128, 128, 128) 1px solid;
-    border-radius: 15px;
-    display: inline-flex;
-    width: 420px;
-    height: 40px;
+    height: 50px;
+}
+#bouton, #barre, #loupe{
+    border: rgba(128, 128, 128, 0.2) 0.5px solid;
 }
 #marquer{
-    border-right: rgba(0, 0, 0, 0.315) 0.5px solid;
-    display: flex;
     justify-content: center;
-    align-items: center;   
-    width: 45px;
-    margin-left: 0;
+    align-items: center;
+    width: 60px;
+    border-top-left-radius: 15px; 
+    border-bottom-left-radius: 15px;
+    background-color: rgba(197, 194, 194, 0.2);
 }
 #barre{
-    border: rgba(128, 128, 128, 0.048) 1px solid;
-    margin-left: -10px;
-    padding-left: 10px;
-    padding-right: 70px;
+    width: 310px;
+    border-right: none;
+    padding-left: 20px;
+    font-size: 1.5em;
 }
 #bouton{
+    font-size: 1.2em;
     background-color: #0065FC;
-    color: white;
-    font-weight: bolder;
-    border: rgba(128, 128, 128, 0.048) 5px solid;
+    color: white;    
     border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    padding: 6.5px;
-    padding-top: 6.9px;
-    padding-bottom: 6px;
-    margin-left: -110px;
-    cursor: pointer;
+    border-bottom-right-radius: 15px;    
+    cursor: pointer;    
+    width: 160px;
 }
 #loupe{
     display: none;
 }
+#marquer, #recherche{
+    display: flex;
+}
+
+#bouton:hover{
+    background-color:#DEEBFF;
+    color: #0065FC;
+}
+/*Filtres*/
+#menu_filtres{
+    margin-top: 30px;
+}
+#titre_filtres{
+    margin-right: 20px;
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+#eco, #fami, #romance, #animaux{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: rgba(128, 128, 128, 0.5) 0.5px solid;
+    border-radius: 15em;
+    border-left: none;
+    font-weight: bolder;  
+    position: relative; 
+    height: 50px;  
+    margin-right: 20px;
+    font-size: 1.3em;
+    padding-left: 40px;
+}
+#eco{
+    width: 180px;
+}
+#fami{
+    width: 115px;    
+}
+#romance{
+    width: 170px;
+}
+#animaux{
+    width: 220px;
+}
+#billet, #coeur, #chien, #famille{
+    background-color: #DEEBFF;
+    color: #0065FC;
+    border-radius: 100%;
+    padding: 15px;  
+    border: rgba(128, 128, 128, 0.5) 0.5px solid;
+    position: absolute;
+    left: -10px;
+}
+#eco:hover, #fami:hover, #romance:hover, #animaux:hover{
+    background-color: #0065FC;
+    color: white;
+}
+#infos{
+    border: rgba(128, 128, 128, 0.5) 0.5px solid;
+    border-radius: 100%;
+    padding: 0.5em;
+    color: #0065FC;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+p span{
+    font-size: 1.1em;
+}
+/*Hébergements*/
+.carte_hotel_pop, .carte_hotel_stand, .carte_activites{
+    display: inline-block;
+    background-color: white;
+    border-radius: 15px;
+    margin: 10px;
+    box-shadow: gray 1px 1px 10px;
+}
+#Hébergements{
+    display: inline-flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 100%;
+}
+#standar, #populaire{
+    padding: 20px;
+    background-color: #F2F2F2;
+    border-radius: 15px;
+}
+#standar{
+    margin-right: 50px;
+}
+/*Résultats standard*/
+.carte_hotel_stand{
+    width: 40%;
+    height: 200px;
+    
+}
+#standar{    
+    width: 65%;
+}
+#pligne{
+    display: inline-flex;
+    justify-content: space-between;    
+    width: 100%;
+}
+#dligne{
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+/*Populaires*/
+.carte_hotel_pop{
+    height: 33%;
+}
+#populaire{
+    display: flex;
+    flex-direction: column;
+    width: 30%;   
+}
+/*Activités*/
+.activites{
+    display: inline-flex;
+}
 /*Pied*/
 #pied{
-    font-family: 'Raleway';
     display: flex;
     width: 100%; 
     padding: 30px;   
