@@ -4,11 +4,10 @@
     src: url(Polices/Raleway-Regular.svg) format('svg');
     src: url(Polices/Raleway-Regular.ttf) format('truetype');
 }
-
 /*Général*/
 body{
-    margin-left: 250px;
-    margin-right: 250px;
+    margin-left: 15%;
+    margin-right: 15%;
     font-family: 'Raleway', sans-serif;
 }
 a{
@@ -29,9 +28,8 @@ h3{
 }
 h4{
     font-size: 1.2em;
-}
-img{
-    width: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 ul{
     list-style: none;
@@ -39,6 +37,7 @@ ul{
 /*Entête*/
 #entete{
     display: flex;
+    justify-content: space-between;
     margin-top: 40px;
 }
 #logo{
@@ -47,22 +46,22 @@ ul{
 }
 #menu{
     display: inline-flex;
-    margin-left: 65%;
-}
-#menu_hebergement, #menu_activites{
-    margin-right: 70px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
 }
 #inscription{
     color: #0065FC;
     font-weight: bold;  
 }
+#menu_hebergement, #menu_activites{
+    margin-right: 100px;
+}
 #menu_hebergement:hover, #menu_activites:hover, #inscription:hover{  
-    border-top: #0065FC 4px solid;
+    border-top: #0065FC 5px solid;
     color: #0065FC;
-    margin-top: -39px;   
+    margin-top: -40px;   
     padding-top: 35px;
 }
-
 /*Partie Principale*/
 /*Barre de recherche*/
 #recherche{
@@ -100,7 +99,6 @@ ul{
 #marquer, #recherche{
     display: flex;
 }
-
 #bouton:hover{
     background-color:#DEEBFF;
     color: #0065FC;
@@ -178,15 +176,22 @@ p span{
 }
 #standar{
     margin-right: 50px;
+    width: 65%;
 }
 /*Résultats standard*/
-.carte_hotel_stand{
-    width: 40%;
-    height: 200px;
-    
+.img_hotel_stand{
+    width: 100%;
+    height: 60%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
-#standar{    
-    width: 65%;
+.carte_hotel_stand{
+    width: 30%;
+    height: 200px;    
+}
+.carte_hotel_stand p{
+    margin: 5px;
+    margin-left: 0;
 }
 #pligne{
     display: inline-flex;
@@ -198,14 +203,41 @@ p span{
     justify-content: space-between;
     width: 100%;
 }
+#afficher{
+    margin-top: 40px;
+    font-weight: bolder;
+    margin-left: 10px;   
+}
+#afficher a:hover{
+    color: #0065FC;
+}
 /*Populaires*/
-.carte_hotel_pop{
-    height: 33%;
+.etoile_bleue{
+    color: #0065FC;
+}
+.etoile_grise{
+    color: rgba(128, 128, 128, 0.25);
+}
+.img_hotel_pop{
+    float: left;
+    height: 100%;
+    width: 40%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding-right: 20px;
+}
+.carte_hotel_pop p{
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+h3 i{
+    padding-left: 100px;
 }
 #populaire{
     display: flex;
     flex-direction: column;
-    width: 30%;   
+    width: 30%;
+    height: 650px;   
 }
 /*Cartes*/
 .carte_hotel_pop, .carte_hotel_stand, .carte_activites, .demi_carte{
@@ -215,6 +247,9 @@ p span{
     margin: 10px;
     box-shadow: gray 1px 1px 10px;
 }
+.carte_hotel_pop{
+    height: 150px;   
+}
 .carte_hotel_pop:hover, .carte_hotel_stand:hover, .carte_activites:hover, .demi_carte:hover{
     background-color: #DEEBFF;
 }
@@ -222,26 +257,49 @@ p span{
     padding: 10px;
 }
 /*Activités*/
-figure{
-    margin: 0;
-}
 .activites{
     display: inline-flex;
     width: 100%;
-}
-.carte_activites, .conteneur_carte_activites{
-    width: 25%;
+    height: 500px;
 }
 .conteneur_carte_activites{
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
+    width: 30%;
 }
-figcaption{
+.carte_activites{
+    width: 20%;
+}
+.demi_carte, .carte_activites{
+    padding: 10px;
+    margin: 10px;
+}
+.demi_carte{
+    height: 45%;
+}
+.mini_img_activites, .img_activites{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100%; 
+}
+.mini_img_activites{
+    height: 150px;
+}
+.img_activites{
+    height: 400px;
+}
+section h4{
     font-weight: bolder;
+    margin-top: 20px;
+    font-size: 1em;
 }
 /*Pied*/
-footer h3{
-    margin: 0;
+.titre_liste{
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+li{
+    margin-top: 20px;
 }
 #pied{
     display: flex;
@@ -253,6 +311,5 @@ footer h3{
     padding-right: 24%;
 }
 footer li a:hover{
-    text-decoration: underline;
     color: #0065FC;
 }
