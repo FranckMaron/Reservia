@@ -17,13 +17,14 @@
 <body>
     <!--Entête-->
     <header id="entete">
-        <img id="logo" src="Images/Reservia.png" alt="Logo de réservia">
+        <img id="logo" src="Images/Reservia.png" alt="Logo de réservia">       
         <nav id="menu">
             <a id="inscription" href="#">S'inscrire</a>
-            <a id="menu_activites" href="#Activités">Activités</a>
-            <a id="menu_hebergement" href="#Hébergements">Hébergements</a>            
-        </nav>
-      
+            <span>      
+                <a id="menu_activites" href="#Activités">Activités</a>
+                <a id="menu_hebergement" href="#Hébergements">Hébergements</a>
+            </span>        
+        </nav>      
     </header>
     <!--Partie Principale-->
     <main>
@@ -33,20 +34,19 @@
         <div id="recherche">
             <i id="marquer" class="fas fa-map-marker-alt"></i>
             <input id="barre" type="search" placeholder="Marseille, France">
-            <input id="bouton" type="button" value="Rechercher">
-            <button id="loupe"><i class="fas fa-search"></i></button>
+            <button id="bouton"><span>Rechercher</span><i id="loupe" class="fas fa-search"></i></button>
         </div>
 
         <!--Filtres-->
-        <div id="menu_filtres">
-            <span id="titre_filtres">Filtres</span>
+        <span id="titre_filtres">Filtres</span>
+        <div id="menu_filtres">            
             <a id="eco" href="#"><i id="billet" class="fas fa-money-bill-wave"></i>Economique</a>
             <a id="fami" href="#"><i id="famille" class="fas fa-child"></i>Familial</a>
             <a id="romance" href="#"><i id="coeur" class="fas fa-heart"></i>Romantique</a>
             <a id="animaux" href="#"><i id="chien" class="fas fa-dog"></i>Animaux autorisés</a>
         </div>
-        <p>
-            <i id="infos" class="fas fa-info"></i> <span>Plus de 500 logements sont disponibles dans cette ville</span>
+        <p id="infos">
+            <i  class="fas fa-info"></i> <br><span>Plus de 500 logements sont disponibles dans cette ville</span>
         </p>
         <!--Résultats de la recherche-->
         <div id="Hébergements">
