@@ -60,7 +60,13 @@ ul{
     padding-left: 25px;
     padding-right: 25px;
 }
-#menu_hebergement:hover, #menu_activites:hover, #inscription:hover{  
+#menu_hebergement:hover, #menu_activites:hover{  
+    border-top: #0065FC 5px solid;
+    color: #0065FC;
+    margin-top: -40px;   
+    padding-top: 36px;
+}
+#inscription:hover{
     border-top: #0065FC 5px solid;
     color: #0065FC;
     margin-top: -40px;   

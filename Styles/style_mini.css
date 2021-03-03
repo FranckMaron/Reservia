@@ -8,15 +8,20 @@ body{
     margin: 5%;
 }
 h1{
+    font-size: 1.5em;
     margin-top: 7%;
 }
 h2{
-    font-size: 1.3em;
+    font-size: 1.1em;
     margin-top: 3%;
     margin-bottom: 10%;
 }
 h3{
+    font-size: 1.1em;
     margin-top: 10px;
+}
+h4{
+    font-size: 1em;
 }
 /*Entete*/
 #logo{
@@ -31,25 +36,22 @@ header span{
     margin-top: 5%;
 }
 #menu{
-    border-bottom: rgba(128, 128, 128, 0.5) 5px solid;
     flex-wrap: wrap;
+    margin-left: 8%;
     width: 100%;
 }
 #inscription{
-    margin-top: -8%;
+    margin-top: -10%;
     font-size: 1.2em;
 }
 #inscription:hover{
     border: none;
-    padding-top: 10px;
+    padding-top: 9px;
 }
 #menu_hebergement:hover, #menu_activites:hover{   
     border: none;
+    padding-top: 40px;
 }
-/* a reflechir
-    border-bottom: #0065FC 5px solid;
-}
-*/
 /*Recherche*/
 #recherche{
     width: 100%;
@@ -94,12 +96,16 @@ p span{
 }
 #standar{
     background-color: initial;
+    margin-bottom: 10%;
 }
 #pligne, #dligne{
     flex-direction: column;
 }
 .carte_hotel_stand{
     width: 90%;
+}
+#afficher{
+    margin-top: 0;
 }
 /*Activités*/
 .activites{
@@ -122,4 +128,7 @@ p span{
 }
 footer div{
     margin-top: 10%;
+}
+#assistance{
+    margin-bottom: 10%;
 }
