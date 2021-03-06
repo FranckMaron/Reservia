@@ -19,6 +19,10 @@ h3{
     margin-top: 10px;
 }
 /*Hebrgements*/
+h3 i{
+    float: right;
+    margin-right: 5%;
+}
 #Hébergements{
     flex-direction: column;
     padding: 0;
@@ -42,4 +46,8 @@ h3{
 #menu_filtres{
     flex-wrap: wrap;
     margin-top: 10px;
+}
+/*Pied de page*/
+footer{
+    padding: 20px;
 }
