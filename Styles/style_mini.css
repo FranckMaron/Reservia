@@ -32,7 +32,7 @@ header{
 }
 header span{
     margin-top: 5%;
-    border-bottom: 5px #c0bebe solid;
+    border-bottom: 5px #c0bebe70 solid;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;
@@ -55,7 +55,8 @@ header span{
     border: none;
     padding-top: 9px;
 }
-#menu_hebergement:hover, #menu_activites:hover{   
+#menu_hebergement:hover, #menu_activites:hover{
+    color: #0065FC;
     border: none;
     padding-top: 40px;
 }
