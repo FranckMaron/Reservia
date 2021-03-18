@@ -1,8 +1,8 @@
 /*Téléchargement de la police*/
 @font-face{
     font-family: 'Raleway';
-    src: url(Polices/Raleway-Regular.svg) format('svg');
-    src: url(Polices/Raleway-Regular.ttf) format('truetype');
+    src: url(../Polices/Raleway-Regular.svg) format('svg');
+    src: url(../Polices/Raleway-Regular.ttf) format('truetype');
 }
 /*Général*/
 body{
@@ -304,7 +304,6 @@ h3 i{
 }
 section h4{
     font-weight: bolder;
-    margin: 20px;
     font-size: 1em;
 }
 /*Pied*/
