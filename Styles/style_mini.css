@@ -34,7 +34,6 @@ header span{
     margin-top: 5%;
     border-bottom: 5px #c0bebe70 solid;
     display: flex;
-    flex-direction: row-reverse;
     justify-content: space-around;
     width: 100%;
 }
