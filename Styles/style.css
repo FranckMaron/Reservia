@@ -329,7 +329,7 @@ li{
 footer li a:hover{
     color: #0065FC;
 }
-@media screen and (max-width: 1600px){
+@media screen and (min-width: 1280px) and (max-width: 1600px){
     body{
         margin: 5%;
     }
