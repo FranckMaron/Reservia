@@ -227,6 +227,9 @@ p span{
     color: #0065FC;
 }
 /*Populaires*/
+.bloc_etoile{
+    float: bottom;
+}
 .etoile_bleue{
     color: #0065FC;
 }
