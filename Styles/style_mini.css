@@ -147,3 +147,8 @@ footer div{
 footer{
     padding: 20px;
 }
+@media screen and (max-width: 350px){
+    h4{
+        font-size: 0.8em;
+    }
+}
